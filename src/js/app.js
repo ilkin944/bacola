@@ -268,11 +268,11 @@ function displayCart() {
                       </div>
                   </div>
               </div>`
+              document.querySelector('.totalPrice').innerHTML = `${cartArray[i].total}`;
   }
   console.log(document.querySelectorAll('.cartTotal')[0]);
   document.querySelector(".cart-inner").innerHTML = output;
-  document.querySelector('.totalPrice').innerHTML = `${shoppingCart.totalCart()}`;
-  document.querySelector('.cartTotal').innerHTML = `$${shoppingCart.totalCart()}`;
+  // document.querySelector('.cartTotal').innerHTML = `$${shoppingCart.totalCart()}`;
   document.querySelector('.card-total').children[0].textContent = `$${shoppingCart.totalCart()}`;
 }
 
