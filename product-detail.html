@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="top-warning">
+        <div class="container">
+            <div class="row center">
+                <div class="top-bar-text">
+                    <span>Due to the <b>COVID 19</b> epidemic, orders may be processed with a slight delay</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="row between">
+                <div class="navbar-pages w-25 flex">
+                    <ul class="w-100 flex between">
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">My account</a>
+                        </li>
+                        <li>
+                            <a href="#">Wishlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Order Tracking</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-ctas w-60">
+                    <ul class="flex between">
+                        <li>
+                            <span>100% Secure delivery without contacting the courier</span>
+                        </li>
+                        <li>
+                            <span>Need help? Call Us: <a class="tel" href="tel: + 0020 500"> + 0020 500</a></span>
+                        </li>
+                        <li>
+                            <span class="switcher"></span>
+                        </li>
+                        <li class="has-menu">
+                            <a href="#">English <i class="fa-solid-fa-chevron-down"></i></a>
+                            <div class="language-box sub-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Spanis</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">German</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-menu">
+                            <a href="#">USD <i class="fa-solid-fa-chevron-down"></i></a>
+                            <div class="currency-box sub-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">USD</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">INR</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">GBP</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="m-p-5 row py-25 between items-center">
+                <div class="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="header-left">
+                    <div class="brand-logo">
+                        <a href="#" class="w-100 flex column items-center">
+                            <img src="./src/images/bacola-logo (1).png" alt="">
+                            <span>Online Grocery Shopping Center</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="mobile-logo">
+                    <a href="#">
+                        <img class="w-100" src="./src/images/bacola-logo (1).png" alt="">
+                    </a>
+                </div>
+                <div class="header-center flex items-center between">
+                    <div class="user-location flex items-center">
+                        <a href="#">
+                            <div class="location-text flex column">
+                                <span>Your Location</span>
+                                <span>Select a Location</span>
+                            </div>
+                            <div class="location-icon">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header-search flex between">
+                        <input type="text" name="" id="" placeholder="Search for products ...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="header-right flex items-center between">
+                    <div class="account">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="card flex items-center between w-60">
+                        <div class="card-total">
+                            <span>$0.00</span>
+                        </div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="basket flex column">
+                            <div class="cart-inner flex column">
+                                <div class="has-item"></div>
+                                <div class="empty-cart">
+                                    <div class="empty-cart-icon">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </div>
+                                    <div class="empty-cart-text">
+                                        No products in the cart.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-notice">
+                                We reduce shipping prices to only 2.49 €!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mobile-hidden between items-center">
+                <div class="categories flex" id="dropdown-category">
+                    <button class="flex w-100 column items-center">
+                        <div class="category-sidebar items-center w-100 between flex ">
+                            <div class="category-text w-80 flex between">
+                                <i class="fa-solid fa-bars"></i>
+                                <span>ALL CATEGORIES</span>
+                            </div>
+                            <div class="category-icon">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="product-count">
+                            <span>total 63 products</span>
+                        </div>
+                    </button>
+                    <div class="sidebar">
+                        <div id="categories-list" class="categories-list w-100 flex column">
+                            <div class="category-name flex">
+                                <ul class="flex column">
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-apple-whole"></i>Fruits & Vegetables</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-drumstick-bite"></i>Meats & Seafood</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-egg"></i>Breakfast & Dairy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-mug-hot"></i>Beverages</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-cookie"></i>Breads & Bakery</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-snowflake"></i>Frozen Foods</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-candy-cane"></i>Biscuits & Snacks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-seedling"></i>Grocery & Staples</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="category-bottom">
+                                <ul>
+                                    <li>
+                                        <a href="#">Value of the Day</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Top 100 Offers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">New Arrivals</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages flex">
+                    <ul class="flex">
+                        <li class="active">
+                            <a href="#">home</a>
+                        </li>
+                        <li>
+                            <a href="#">shop</a>
+                        </li>
+                        <li>
+                            <a href="#">meats&seafood</a>
+                        </li>
+                        <li>
+                            <a href="#">bakery</a>
+                        </li>
+                        <li>
+                            <a href="#">beverages</a>
+                        </li>
+                        <li>
+                            <a href="#">blog</a>
+                        </li>
+                        <li>
+                            <a href="#">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="page-breadcrumb w-100 flex between">
+                    <div class="breadcrumb-left w-50 flex">
+                        <ul class="flex items-center mobile-start mobile-column">
+                            <li class="flex items-center mobile-row-reverse">
+                                <a href="#">HOME</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="flex items-center mobile-row-reverse">
+                                <a href="#">MEATS & SEAFOOD</a>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="flex items-center mobile-row-reverse">
+                                <a href="#">ALL NATURAL ITALIAN-STYLE CHICKEN MEATBALLS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="breadcrum-right flex items-center">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                </div>
+                <div class="product-detail-page-inner w-100 between p-25 flex mobile-column">
+                    <div class="pdgi-title w-100 flex">
+                        <h1>All Natural Italian-Style Chicken Meatballs</h1>
+                    </div>
+                    <div class="pdgi-meta w-100 flex">
+                        <ul class="flex">
+                            <li>
+                                <span>Brands:</span>
+                                <span>Welch's</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span>1</span>
+                            </li>
+                            <li>
+                                <span>SKU:</span>
+                                <span>ZU49VOR</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pdgi-orta w-100 flex between mobile-column">
+                        <div class="pdgi-left w-40 flex column">
+                            <div class="pdgil-badge">
+                                <span>23%</span>
+                                <span>RECOMMEND</span>
+                            </div>
+                            <div class="pdgil-image flex">
+                                <img class="w-100 z-0" src="./src/images/product-image-62-768x691.jpg" alt="">
+                            </div>
+                            <div class="pdgi-thumbnail w-100 flex center">
+                                <div class="thumb-box w-10 flex center items-center">
+                                    <img class="w-100" src="./src/images/product-image-62-346x310.jpg" alt="">
+                                </div>
+                                <div class="thumb-box w-10 flex center items-center">
+                                    <img class="w-100" src="./src/images/product-image2-47-150x150.jpg" alt="">
+                                </div>
+                                <div class="thumb-box w-10 flex center items-center">
+                                    <img class="w-100" src="./src/images/product-image3-35-150x150.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pdgi-right w-60 flex mobile-column">
+                            <div class="pdgi-right-product-content w-50 flex column">
+                                <div class="pdgir-price w-100 flex items-center">
+                                    <span class="old-price">$9.35</span>
+                                    <span class="new-price">$7.25</span>
+                                </div>
+                                <div class="pdgir-stock w-100 flex">
+                                    <span>IN STOCK</span>
+                                </div>
+                                <div class="pdgir-description w-100 flex">
+                                    <p>Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt.
+                                        Class aptent taciti sociosqu ad litora torquent</p>
+                                </div>
+                                <div class="pdgir-add-to-cart mobile-hidden w-100 flex">
+                                    <div class="pdgir-qty flex">
+                                        <button>-</button>
+                                        <input disabled value="1">
+                                        <button>+</button>
+                                    </div>
+                                    <div class="pdgir-add flex">
+                                        <button>Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="pdgir-wish-compare w-100 flex">
+                                    <button><i class="fa-solid fa-heart"></i> add to wishlist</button>
+                                    <button>compare</button>
+                                </div>
+                                <div class="pdgir-meta-box w-100 flex">
+                                    <ul class="w-100 flex column">
+                                        <li class="flex items-center"><i class="fa-solid fa-check"></i> Type: Organic</li>
+                                        <li class="flex items-center"><i class="fa-solid fa-check"></i> MFG: Jun 4.2021</li>
+                                        <li class="flex items-center"><i class="fa-solid fa-check"></i> LIFE: 30 days</li>
+                                    </ul>
+                                </div>
+                                <div class="pdgir-category w-100 flex">
+                                    <div class="pdgir-category-name w-100 flex items-center">
+                                        <span>Category:</span>
+                                        <a href="#">Meats & Seafood</a>
+                                    </div>
+                                    <div class="pdgir-tag-name w-100 flex items-center">
+                                        <span>Tags: </span>
+                                        <a href="#">chicken, natural, organic</a>
+                                    </div>
+                                </div>
+                                <div class="pdgir-social-share w-100 flex">
+                                    <ul class=" w-100 flex">
+                                        <li>
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-pinterest"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-reddit"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pdgi-right-sidebar w-50 flex column">
+                                <div class="column product-icons">
+                                    <div class="alert-message">Covid-19 Info: We keep delivering.</div>
+                                    <div class="icon-messages flex">
+                                        <ul class="flex column">
+                                            <li class="flex py-25">
+                                                <div class="icon"><i class="fa-solid fa-truck"></i></div>
+                                                <div class="message">Free Shipping apply to all orders over $100</div>
+                                            </li>
+                                            <li class="flex py-25">
+                                                <div class="icon"><i class="fa-solid fa-bottle-water"></i></div>
+                                                <div class="message">Guranteed 100% Organic from natural farmas</div>
+                                            </li>
+                                            <li class="flex py-25">
+                                                <div class="icon"><i class="fa-solid fa-dollar-sign"></i></div>
+                                                <div class="message">1 Day Returns if you change your mind</div>
+                                            </li>
+    
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-detail-page-description w-100 flex">
+                    <div class="description-tab w-100 flex">
+                        <ul class=" w-100 flex mobile-column">
+                            <li class="aktiv">DESCRIPTION</li>
+                            <li>ADDITIONAL INFORMATION</li>
+                            <li>REVIEWS (1)</li>
+                        </ul>
+                    </div>
+                    <div class="description-box w-100 flex">
+                        <p>Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui
+                            finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat
+                            ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales
+                            nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia.
+                            Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel,
+                            dignissim a tortor. Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor,
+                            eleifend nunc a, lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus odio,
+                            feugiat eu nunc sit amet, maximus sagittis dolor. Vivamus nisi sapien, elementum sit amet
+                            eros sit amet, ultricies cursus ipsum. Sed consequat luctus ligula. Curabitur laoreet
+                            rhoncus blandit. Aenean vel diam ut arcu pharetra dignissim ut sed leo. Vivamus faucibus,
+                            ipsum in vestibulum vulputate, lorem orci convallis quam, sit amet consequat nulla felis
+                            pharetra lacus. Duis semper erat mauris, sed egestas purus commodo vel.</p>
+                    </div>
+                </div>
+                <div class="related-products-section w-100 flex column">
+                    <div class="section-title flex">
+                        <h4>RELATED PRODUCTS</h4>
+                    </div>
+                    <div class="related-products w-100 flex">
+                        <div class="products-section flex column">
+                            <div class="product-container new-products flex">
+                                <div class="product-cart flex">
+                                    <div class="product-item w-100 flex column">
+                                        <div class="product-badge w-50">
+                                            <div class="sale w-100">
+                                                <span>23%</span>
+                                            </div>
+                                            <div class="recommend w-100">
+                                                <span>RECOMMEND</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-image w-100">
+                                            <a href="#" class="flex w-100">
+                                                <img class="w-100" src="./src/images/product-image-46-346x310.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-name w-100">
+                                                <a href="#">All Natural Italian-Style Chicken Meatballs</a>
+                                            </div>
+                                            <div class="product-stock w-100">
+                                                <span>IN STOCK</span>
+                                            </div>
+                                            <div class="product-rating flex w-100">
+                                                <div class="star-rating flex items-center">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="rating-comment">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-price w-100">
+                                                <span class="old-price">$9.35</span>
+                                                <span class="updated-price">$7.25</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-cart flex">
+                                    <div class="product-item w-100 flex column">
+                                        <div class="product-badge w-50">
+                                            <div class="sale w-100">
+                                                <span>23%</span>
+                                            </div>
+                                            <div class="recommend w-100">
+                                                <span>RECOMMEND</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-image w-100">
+                                            <a href="#" class="flex w-100">
+                                                <img class="w-100" src="./src/images/product-image-46-346x310.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-name w-100">
+                                                <a href="#">All Natural Italian-Style Chicken Meatballs</a>
+                                            </div>
+                                            <div class="product-stock w-100">
+                                                <span>IN STOCK</span>
+                                            </div>
+                                            <div class="product-rating flex w-100">
+                                                <div class="star-rating flex items-center">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="rating-comment">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-price w-100">
+                                                <span class="old-price">$9.35</span>
+                                                <span class="updated-price">$7.25</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-cart flex">
+                                    <div class="product-item w-100 flex column">
+                                        <div class="product-badge w-50">
+                                            <div class="sale w-100">
+                                                <span>23%</span>
+                                            </div>
+                                            <div class="recommend w-100">
+                                                <span>RECOMMEND</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-image w-100">
+                                            <a href="#" class="flex w-100">
+                                                <img class="w-100" src="./src/images/product-image-46-346x310.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-name w-100">
+                                                <a href="#">All Natural Italian-Style Chicken Meatballs</a>
+                                            </div>
+                                            <div class="product-stock w-100">
+                                                <span>IN STOCK</span>
+                                            </div>
+                                            <div class="product-rating flex w-100">
+                                                <div class="star-rating flex items-center">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="rating-comment">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-price w-100">
+                                                <span class="old-price">$9.35</span>
+                                                <span class="updated-price">$7.25</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-cart flex">
+                                    <div class="product-item w-100 flex column">
+                                        <div class="product-badge w-50">
+                                            <div class="sale w-100">
+                                                <span>23%</span>
+                                            </div>
+                                            <div class="recommend w-100">
+                                                <span>RECOMMEND</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-image w-100">
+                                            <a href="#" class="flex w-100">
+                                                <img class="w-100" src="./src/images/product-image-46-346x310.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-name w-100">
+                                                <a href="#">All Natural Italian-Style Chicken Meatballs</a>
+                                            </div>
+                                            <div class="product-stock w-100">
+                                                <span>IN STOCK</span>
+                                            </div>
+                                            <div class="product-rating flex w-100">
+                                                <div class="star-rating flex items-center">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="rating-comment">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-price w-100">
+                                                <span class="old-price">$9.35</span>
+                                                <span class="updated-price">$7.25</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="related-products-section w-100 flex column">
+                    <div class="section-title flex">
+                        <h4>RECENTLY VIEWED PRODUCTS</h4>
+                    </div>
+                    <div class="related-products w-100 flex">
+                        <div class="products-section flex column">
+                            <div class="product-container new-products flex">
+                                <div class="product-cart flex">
+                                    <div class="product-item w-100 flex column">
+                                        <div class="product-badge w-50">
+                                            <div class="sale w-100">
+                                                <span>23%</span>
+                                            </div>
+                                            <div class="recommend w-100">
+                                                <span>RECOMMEND</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-image w-100">
+                                            <a href="#" class="flex w-100">
+                                                <img class="w-100" src="./src/images/product-image-46-346x310.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-name w-100">
+                                                <a href="#">All Natural Italian-Style Chicken Meatballs</a>
+                                            </div>
+                                            <div class="product-stock w-100">
+                                                <span>IN STOCK</span>
+                                            </div>
+                                            <div class="product-rating flex w-100">
+                                                <div class="star-rating flex items-center">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="rating-comment">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-price w-100">
+                                                <span class="old-price">$9.35</span>
+                                                <span class="updated-price">$7.25</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-cart flex">
+                                    <div class="product-item w-100 flex column">
+                                        <div class="product-badge w-50">
+                                            <div class="sale w-100">
+                                                <span>23%</span>
+                                            </div>
+                                            <div class="recommend w-100">
+                                                <span>RECOMMEND</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-image w-100">
+                                            <a href="#" class="flex w-100">
+                                                <img class="w-100" src="./src/images/product-image-46-346x310.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-name w-100">
+                                                <a href="#">All Natural Italian-Style Chicken Meatballs</a>
+                                            </div>
+                                            <div class="product-stock w-100">
+                                                <span>IN STOCK</span>
+                                            </div>
+                                            <div class="product-rating flex w-100">
+                                                <div class="star-rating flex items-center">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="rating-comment">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-price w-100">
+                                                <span class="old-price">$9.35</span>
+                                                <span class="updated-price">$7.25</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-cart flex">
+                                    <div class="product-item w-100 flex column">
+                                        <div class="product-badge w-50">
+                                            <div class="sale w-100">
+                                                <span>23%</span>
+                                            </div>
+                                            <div class="recommend w-100">
+                                                <span>RECOMMEND</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-image w-100">
+                                            <a href="#" class="flex w-100">
+                                                <img class="w-100" src="./src/images/product-image-46-346x310.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-name w-100">
+                                                <a href="#">All Natural Italian-Style Chicken Meatballs</a>
+                                            </div>
+                                            <div class="product-stock w-100">
+                                                <span>IN STOCK</span>
+                                            </div>
+                                            <div class="product-rating flex w-100">
+                                                <div class="star-rating flex items-center">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="rating-comment">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-price w-100">
+                                                <span class="old-price">$9.35</span>
+                                                <span class="updated-price">$7.25</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-cart flex">
+                                    <div class="product-item w-100 flex column">
+                                        <div class="product-badge w-50">
+                                            <div class="sale w-100">
+                                                <span>23%</span>
+                                            </div>
+                                            <div class="recommend w-100">
+                                                <span>RECOMMEND</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-image w-100">
+                                            <a href="#" class="flex w-100">
+                                                <img class="w-100" src="./src/images/product-image-46-346x310.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="product-name w-100">
+                                                <a href="#">All Natural Italian-Style Chicken Meatballs</a>
+                                            </div>
+                                            <div class="product-stock w-100">
+                                                <span>IN STOCK</span>
+                                            </div>
+                                            <div class="product-rating flex w-100">
+                                                <div class="star-rating flex items-center">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="rating-comment">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-price w-100">
+                                                <span class="old-price">$9.35</span>
+                                                <span class="updated-price">$7.25</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="w-100 mobile-fixed-add-to-cart mobile-block desktop-hidden">
+        <div class="pdgir-add-to-cart w-100 between flex">
+            <div class="pdgir-qty flex">
+                <button>-</button>
+                <input disabled value="1">
+                <button>+</button>
+            </div>
+            <div class="pdgir-add flex">
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <section class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="newsletter-section flex between">
+                    <div class="newsletter-left flex column">
+                        <div class="newsletter-title">
+                            <span>$20 discount for your first order</span>
+                        </div>
+                        <div class="newsletter-heading flex column">
+                            <span>Join our newsletter and get...</span>
+                            <span>Join our email subscription now to get updates on promotions and coupons.</span>
+                        </div>
+                        <div class="newsletter-form w-100 flex between items-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Your email address...">
+                            <button>Subscibe</button>
+                        </div>
+                    </div>
+                    <div class="newsletter-image">
+                        <img src="./src/images/coupon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-top w-100 flex">
+                    <ul class="w-100 flex center">
+                        <li>
+                            <i class="fa-solid fa-cow"></i>
+                            <span>Everyday fresh products</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-truck"></i>
+                            <span>Free delivery for order over $70</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-percent"></i>
+                            <span>Daily Mega Discounts</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span>Best price on the market</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-main w-100 flex between">
+                    <div class="footer-sec-item">
+                        <ul>
+                            <li>
+                                <h3>FRUIT & VEGETABLES</h3>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-sec-item">
+                        <ul>
+                            <li>
+                                <h3>FRUIT & VEGETABLES</h3>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-sec-item">
+                        <ul>
+                            <li>
+                                <h3>FRUIT & VEGETABLES</h3>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-sec-item">
+                        <ul>
+                            <li>
+                                <h3>FRUIT & VEGETABLES</h3>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-sec-item">
+                        <ul>
+                            <li>
+                                <h3>FRUIT & VEGETABLES</h3>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                            <li>
+                                <a href="#">Fresh Vegetables</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-bottom w-100">
+                <div class="fb-cta flex w-100 between">
+                    <div class="fbc-call w-20 flex">
+                        <div class="call-icon flex items-center center">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="call-text flex column">
+                            <span>8 800 555-55</span>
+                            <span>Working 8:00 - 22:00</span>
+                        </div>
+                    </div>
+                    <div class="fbc-right flex between">
+                        <div class="fbc-app flex">
+                            <ul class="w-100 flex">
+                                <li class="flex column items-end">
+                                    <h5>Download App on Mobile :</h5>
+                                    <span>15% discount on your first purchase</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/images/google-play.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./src/images/app-store.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fbc-social flex">
+                            <ul class="flex">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright flex between items-center">
+                    <div class="copyright-left flex">
+                        Copyright 2022 © Bacola WordPress Theme. All rights reserved. Powered by KlbTheme.
+                    </div>
+                    <div class="copyright-right flex ">
+                        <ul class="w-100 flex items-center">
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms and Conditions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Cookie</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./src/images/payments.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="select-location" id="location">
+        <div class="select-location-wrapper">
+            <h6 class="entry-title">Choose your Delivery Location</h6>
+            <div class="entry-description">Enter your address and we will specify the offer for your area.</div>
+            <div class="close-popup">
+                <i class="fa-solid fa-times" id="close-btn"></i>
+            </div>
+            <div class="search-location"><select size="8" name="site-area" class="site-area select2-hidden-accessible"
+                    id="site-area" data-placeholder="Search your area" data-select2-id="site-area" tabindex="-1"
+                    aria-hidden="true">
+                    <option value="all" data-min="Clear All" data-select2-id="6">Select a Location</option>
+                    <option value="alabama" data-min="Min: $130" data-select2-id="7">Alabama</option>
+                    <option value="alaska" data-min="Min: $120" data-select2-id="8">Alaska</option>
+                    <option value="arizona" data-min="Min: $150" data-select2-id="9">Arizona</option>
+                    <option value="california" data-min="Min: $110" data-select2-id="10">California</option>
+                    <option value="colorado" data-min="Min: $140" data-select2-id="11">Colorado</option>
+                    <option value="florida" data-min="Min: $160" data-select2-id="12">Florida</option>
+                    <option value="georgia" data-min="Min: $120" data-select2-id="13">Georgia</option>
+                    <option value="kansas" data-min="Min: $170" data-select2-id="14">Kansas</option>
+                    <option value="minnesota" data-min="Min: $120" data-select2-id="15">Minnesota</option>
+                    <option value="new-york" data-min="Min: $110" data-select2-id="16">New York</option>
+                    <option value="washington" data-min="Min: $130" data-select2-id="17">Washington</option>
+                </select><span
+                    class="select2 select2-container select2-container--default select2-container--below select2-container--open"
+                    dir="ltr" data-select2-id="1" style="width: 360px;"><span class="selection"><span
+                            class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true"
+                            aria-expanded="true" tabindex="0" aria-disabled="false"
+                            aria-labelledby="select2-site-area-container" aria-owns="select2-site-area-results"
+                            aria-activedescendant="select2-site-area-result-5imn-colorado"><span
+                                class="select2-selection__rendered" id="select2-site-area-container" role="textbox"
+                                aria-readonly="true"><span class="select2-selection__placeholder">Search your
+                                    area</span></span><span class="select2-selection__arrow" role="presentation"><b
+                                    role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+                        aria-hidden="true"></span></span><span
+                    class="select2-container select2-container--default select2-container--open"
+                    style="position: absolute; top: 23.6px; left: -579.6px;"><span
+                        class="select2-dropdown site-location-select select2-dropdown--below" dir="ltr"
+                        style="width: 360px;"><span class="select2-search select2-search--dropdown"><input
+                                class="select2-search__field" type="search" tabindex="0" autocomplete="off"
+                                autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox"
+                                aria-autocomplete="list" aria-controls="select2-site-area-results"
+                                placeholder="Search your area"
+                                aria-activedescendant="select2-site-area-result-5imn-colorado"><svg
+                                data-testid="MagnifyGlass" viewBox="0 0 16 16" class="css-ekjjru">
+                                <path
+                                    d="M14.23437,15.10449l-3.2539-3.25488a6.13908,6.13908,0,1,1,1.63574-1.85352c-.05859.10156-.11816.19922-.17969.29492l-.63086-.40625c.05567-.08593.10938-.17383.16016-.26269a5.406,5.406,0,1,0-1.19922,1.43945.37776.37776,0,0,1,.50781.02051l3.49121,3.49121Z"
+                                    fill="currentColor"></path>
+                            </svg></span><span class="select2-results">
+                            <ul class="select2-results__options" role="listbox" id="select2-site-area-results"
+                                aria-expanded="true" aria-hidden="false">
+                                <li class="select2-results__option" id="select2-site-area-result-k8cf-all" role="option"
+                                    aria-selected="false" data-select2-id="select2-site-area-result-k8cf-all">
+                                    <span>Select a Location</span><span class="min-price">Clear All</span>
+                                </li>
+                                <li class="select2-results__option" id="select2-site-area-result-tv1q-alabama"
+                                    role="option" aria-selected="false"
+                                    data-select2-id="select2-site-area-result-tv1q-alabama"><span>Alabama</span><span
+                                        class="min-price">Min: $130</span></li>
+                                <li class="select2-results__option" id="select2-site-area-result-2cxl-alaska"
+                                    role="option" aria-selected="false"
+                                    data-select2-id="select2-site-area-result-2cxl-alaska"><span>Alaska</span><span
+                                        class="min-price">Min: $120</span></li>
+                                <li class="select2-results__option" id="select2-site-area-result-wy4s-arizona"
+                                    role="option" aria-selected="false"
+                                    data-select2-id="select2-site-area-result-wy4s-arizona"><span>Arizona</span><span
+                                        class="min-price">Min: $150</span></li>
+                                <li class="select2-results__option" id="select2-site-area-result-luhc-california"
+                                    role="option" aria-selected="false"
+                                    data-select2-id="select2-site-area-result-luhc-california">
+                                    <span>California</span><span class="min-price">Min: $110</span>
+                                </li>
+                                <li class="select2-results__option select2-results__option--highlighted"
+                                    id="select2-site-area-result-5imn-colorado" role="option" aria-selected="false"
+                                    data-select2-id="select2-site-area-result-5imn-colorado"><span>Colorado</span><span
+                                        class="min-price">Min: $140</span></li>
+                                <li class="select2-results__option" id="select2-site-area-result-5awz-florida"
+                                    role="option" aria-selected="false"
+                                    data-select2-id="select2-site-area-result-5awz-florida"><span>Florida</span><span
+                                        class="min-price">Min: $160</span></li>
+                                <li class="select2-results__option" id="select2-site-area-result-ott0-georgia"
+                                    role="option" aria-selected="false"
+                                    data-select2-id="select2-site-area-result-ott0-georgia"><span>Georgia</span><span
+                                        class="min-price">Min: $120</span></li>
+                                <li class="select2-results__option" id="select2-site-area-result-tka1-kansas"
+                                    role="option" aria-selected="false"
+                                    data-select2-id="select2-site-area-result-tka1-kansas"><span>Kansas</span><span
+                                        class="min-price">Min: $170</span></li>
+                                <li class="select2-results__option" id="select2-site-area-result-6elg-minnesota"
+                                    role="option" aria-selected="false"
+                                    data-select2-id="select2-site-area-result-6elg-minnesota">
+                                    <span>Minnesota</span><span class="min-price">Min: $120</span>
+                                </li>
+                                <li class="select2-results__option" id="select2-site-area-result-xoj8-new-york"
+                                    role="option" aria-selected="false"
+                                    data-select2-id="select2-site-area-result-xoj8-new-york"><span>New York</span><span
+                                        class="min-price">Min: $110</span></li>
+                                <li class="select2-results__option" id="select2-site-area-result-emo2-washington"
+                                    role="option" aria-selected="false"
+                                    data-select2-id="select2-site-area-result-emo2-washington">
+                                    <span>Washington</span><span class="min-price">Min: $130</span>
+                                </li>
+                            </ul>
+                        </span></span></span></div>
+        </div>
+        <div class="location-overlay"></div>
+    </div>
+    <script src="./src/js/app.js"></script>
+</body>
+
+</html>

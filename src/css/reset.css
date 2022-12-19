@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+nav,header,section,footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+:root{
+    --main-font:'Inter', sans-serif;;
+    --secondary-font:'Dosis', sans-serif;;
+    --color-secondary: #2bbef9;
+    --color-primary: #233a95;
+    --size-border-radius: 7px;
+    --size-form-radius: 4px;
+    --font-primary: "Inter", sans-serif;
+    --font-secondary: "Dosis", sans-serif;
+    --color-background: #fff;
+    --color-primary: #233a95;
+    --color-secondary: #2bbef9;
+    --color-price: #d51243;
+    --color-rating: #ffcd00;
+    --color-text: #202435;
+    --color-text-light: #3e445a;
+    --color-text-lighter: #71778e;
+    --color-light: #f7f8fd;
+    --color-lighter: #fbfcfe;
+    --color-border: #e4e5ee;
+    --color-border-dark: #d9d9e9;
+    --color-border-light: #edeef5;
+    --color-info: #c2c2d3;
+    --color-info-dark: #9b9bb4;
+    --color-info-light: #f3f3f6;
+    --color-success: #00b853;
+    --color-success-dark: #038e42;
+    --color-success-light: #e5f8ed;
+    --color-danger: #ed174a;
+    --color-danger-dark: #be143c;
+    --color-danger-light: #ffeef2;
+    --color-warning: #ff6048;
+    --color-warning-dark: #ea2b0f;
+    --color-warning-light: #ffefec;
+    --color-form-background: #f3f4f7;
+    --color-placeholder: #9595a9;
+}
+a{text-decoration: none;color: #000;}
+ul,ol{list-style: none;}
+
+body{
+    font-family: var(--font-primary);
+}
+
+
+.container{
+    width: 78%;
+    margin: 0 auto;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.w-0{
+    width: 0;
+}
+.w-10{
+    width: 10%;
+}
+.w-20{
+    width: 20%;
+}
+.w-25{
+    width: 25%;
+}
+.w-30{
+    width: 30%;
+}
+.w-40{
+    width: 40%;
+}
+.w-50{
+    width: 50%;
+}
+.w-60{
+    width: 60%;
+}
+.w-70{
+    width: 70%;
+}
+.w-80{
+    width: 80%;
+}
+.w-90{
+    width: 90%;
+}
+.w-100{
+    width: 100%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.center{
+    justify-content: center;
+}
+.between{
+    justify-content: space-between;
+}
+.items-center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.py-25{
+    padding-top:25px;
+    padding-bottom:25px;
+}
+.py-15{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.pt-25{
+    padding-top: 25px;
+}
+.p-25{
+    padding: 25px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-primary);
+}
+.mt-20{
+    margin-top: 20px;
+}
+
+
+@media (min-width: 500px) and (max-width:768px) {
+    .container{
+      width: 90%;
+    }
+  }
