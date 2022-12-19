@@ -272,7 +272,6 @@ function displayCart() {
   }
   console.log(document.querySelectorAll('.cartTotal')[0]);
   document.querySelector(".cart-inner").innerHTML = output;
-  // document.querySelector('.cartTotal').innerHTML = `$${shoppingCart.totalCart()}`;
   document.querySelector('.card-total').children[0].textContent = `$${shoppingCart.totalCart()}`;
 }
 

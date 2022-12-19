@@ -186,6 +186,20 @@ nav span {
   margin-right: 0.625rem;
   position: relative;
 }
+.cartTotal{
+  padding: 0 30px;
+}
+
+.cartTotalPrice{
+  margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--color-border-light);
+}
+.cartTotalPrice span:first-child{
+  font-size: .8125rem;
+    font-weight: 600;
+    color: var(--color-info);
+}
 .cart-image i{
   display: flex;
     font-size: 0.9rem;
